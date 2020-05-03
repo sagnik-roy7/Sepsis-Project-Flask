@@ -1,0 +1,268 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sepsis</title>
+  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='font-awesome.min.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <!--banner-->
+  <section id="banner" class="banner" >
+    <div class="bg-color">
+      <nav class="navbar navbar-default navbar-fixed-top bg-dark">
+        <div class="container">
+          <div class="col-md-12">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+            <a class="navbar-brand" href="#"><img src="{{ url_for('static', filename='logo.jpg') }}" class="img-responsive" style="width: 140px; margin-top: -16px;"></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="{{ url_for('home') }}">Home</a></li>
+                <li class=""><a href="{{ url_for('formhandle') }}">Test</a></li>
+                <li class=""><a href="{{ url_for('education') }}">Awareness</a></li>
+                 <li class=""><a href="#about">About</a></li>
+                <li class=""><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="banner-info">
+            <!--<div class="banner-logo text-center">
+
+              <img src="{{ url_for('static', filename='logo.jpg') }}" class="img-responsive">
+          </div>-->
+            <div class="banner-text text-center">
+              <h1 class="white">Predict Your Patient's Condition Now  !!!</h1>
+              <p>Click the below button to test .</p>
+              <a href="{{ url_for('formhandle') }}" class="btn btn-appoint" style="font-size:15px;">Test</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ banner-->
+  <!--service-->
+
+  <!--/ service-->
+  <!--cta-->
+  <section id="cta-1" class="section-padding">
+    <div class="container" >
+      <div class="row" style="background-color: RGBA(13,70,83,0.78)">
+        <div class="schedule-tab" >
+          <div class="col-md-4 col-sm-4 bor-left">
+            <div class="mt-boxy-color"></div>
+            <div class="medi-info">
+              <h3 style="font-size:25px;">What is sepsis?</h3>
+              <p style="font-size:16px;">Sepsis is the body’s overwhelming and life-threatening response to infection which can lead to tissue damage, organ failure, and death. Learn more about the symptoms of sepsis, which kills 270,000 Americans each year. </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="medi-info">
+              <h3 style="font-size:25px;">It's About Time</h3>
+              <p style="font-size:16px;">It’s About Time a national initiative to raise awareness of sepsis and the urgent need to seek treatment when symptoms are recognized.
+                Early detection is the best hope to survive and limit disabilities when sepsis is present </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 mt-boxy-3">
+            <div class="mt-boxy-color"></div>
+            <div class="time-info">
+              <h3 style="font-size:25px;">Signs of sepsis</h3>
+              <table style="margin: 8px 0px 0px;" border="1">
+                <tbody>
+                  <tr>
+                    <td>1)Temperature</td>
+                    <td>Higher or lower than normal</td>
+                  </tr>
+                  <tr>
+                    <td>2) Infection</td>
+                    <td>May have signs and symptoms of an infection</td>
+                  </tr>
+                  <tr>
+                    <td>3) Mental Decline</td>
+                    <td>Confused,sleepy,difficult to rouse </td>
+                  </tr>
+                <tr>
+                    <td>4) Extremely Ill</td>
+                    <td>Severe pain or discomfort </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--cta-->
+  <!--about-->
+  {% block content%}{% endblock%}
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-4 col-xs-12">
+          <div class="section-title">
+            <h2 class="head-title lg-line">Sepsis is  <br>Life Threatening</h2>
+            <hr class="botm-line">
+            <p class="sec-para">Early detection and antibiotic treatment of sepsis are critical for improving sepsis outcomes, where each hour of delayed treatment has been associated with roughly an 4-8% increase in mortality </p>
+            <a href="" style="color: #0cb8b6; padding-top:10px;">Know more..</a>
+          </div>
+        </div>
+        <div class="col-md-9 col-sm-8 col-xs-12">
+              <div class="more-features-box-text-description">
+                <h3>It's something important you want to know.</h3>
+                <p>Early detection is the best hope to survive and limit disabilities when sepsis is present.</p>
+              </div>
+            </div>
+         <div class="col-md-9 col-sm-8 col-xs-12">
+              <div class="more-features-box-text-description">
+                <h3>It's something important you want to know.</h3>
+                <p>Sepsis survivors and family members of people who have had sepsis may find themselves experiencing emotional and psychological issues that can make it difficult to move forward.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--cta 2-->
+  <section id="cta-2" class="section-padding" style="background-color: RGBA(13,70,83,0.78);">
+    <div class="container" >
+      <div class=" row">
+        <div class="col-md-2"></div>
+        <div class="text-right-md col-md-4 col-sm-4">
+          <h2 class="section-title white lg-line">« Septic Shock »</h2>
+        </div>
+        <div class="col-md-4 col-sm-5" >
+         Septic shock  is a potentially fatal medical condition that occurs when sepsis, which is organ injury or damage in response to infection, leads to dangerously low blood pressure and abnormalities in cellular metabolism
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </section>
+  <!--cta-->
+  <!--contact-->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="ser-title">Contact us</h2>
+          <hr class="botm-line">
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <h3>Contact Info</h3>
+          <div class="space"></div>
+          <p>Chaitanya Bharathi institute of technology <br> Gandipet, Hyderabad</p>
+          <div class="space"></div>
+          <p>info@gehealthcare.com</p>
+          <div class="space"></div>
+          <p>+91 9848022338 </p>
+        </div>
+        <div class="col-md-8 col-sm-8 marb20">
+          <div class="contact-info">
+            <h3 class="cnt-ttl">Having Any Query!  Write to us</h3>
+            <div class="space"></div>
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control br-radius-zero" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control br-radius-zero" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control br-radius-zero" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control br-radius-zero" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validation"></div>
+              </div>
+
+              <div class="form-action">
+                <button type="submit" class="btn btn-form">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ contact-->
+  <!--footer-->
+  <footer id="footer">
+    <div class="top-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 marb20">
+            <div class="ftr-tle">
+              <h4 class="white no-padding">About Us</h4>
+            </div>
+            <div class="info-sec">
+              <p>Praesent convallis tortor et enim laoreet, vel consectetur purus latoque penatibus et dis parturient.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 marb20">
+            <div class="ftr-tle">
+              <h4 class="white no-padding">Quick Links</h4>
+            </div>
+
+          </div>
+          <div class="col-md-4 col-sm-4 marb20">
+            <div class="ftr-tle">
+              <h4 class="white no-padding">Follow us</h4>
+            </div>
+            <div class="info-sec">
+              <ul class="social-icon">
+                <li class="bglight-blue"><i class="fa fa-facebook"></i></li>
+                <li class="bgred"><i class="fa fa-google-plus"></i></li>
+                <li class="bgdark-blue"><i class="fa fa-linkedin"></i></li>
+                <li class="bglight-blue"><i class="fa fa-twitter"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--/ footer-->
+
+  <script src="{{url_for('static', filename='jquery.min.js')}}"></script>
+  <script src="{{url_for('static', filename='jquery.easing.min.js')}}"></script>
+  <script src="{{url_for('static', filename='bootstrap.min.js')}}"></script>
+  <script src="{{url_for('static', filename='custom.js')}}"></script>
+  <script src="{{url_for('static', filename='contactform.js')}}"></script>
+
+
+</body>
+
+</html>

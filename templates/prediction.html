@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Sepsis Form</h1>
+    <center>
+        {%block content%}
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        {%if val == 0 %}
+        <div class="alert alert-success" role="alert" style="margin:15px;border-radius:10px;">
+            <h1> Possibility of sepsis is low.</h1>
+        </div>
+        {% endif %}
+        {% if val == 1  %}
+        <div class="alert alert-danger" role="alert" style="margin:15px;border-radius:10px;">
+            <h1> Possiblity of sepsis is high.</h1>
+        </div>
+        {% endif %}
+        <div class="container py-5">
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+            <form action="{{ url_for('formhandle') }}" method="POST">
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="gender">Gender</label>
+                        <select class="form-control selcls" id="gender" name="gender">
+                            <option value="0">Male</option>
+                            <option value="1">Female</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="heartrate">Heart Rate</label>
+                        <input type="text" class="form-control" id="heartrate" placeholder="Heart Rate" name="heartrate">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="temperature">Temperature</label>
+                        <input type="text" class="form-control" id="temperature" placeholder="Temperature" name="temp">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="age">Age</label>
+                        <input type="text" class="form-control" id="age" placeholder="Age" name="age">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="oxystat">O2 stat</label>
+                        <input type="text" class="form-control" id="oxystat" placeholder="o2 stat" name="oxygen">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="bp">Blood Pressure</label>
+                        <select class="form-control selcls" id="bp" name="bp">
+                            <option value="low">Low (SBP<90 and DBP<60)</option>
+                            <option value="normal">Normal (SBP(90,120) and DBP(60,80))</option>
+                            <option value="elevated">Elevated (SBP(120,140) and DBP(80,90))</option>
+                            <option value="high">High (SBP>140 and DBP>90)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="resp">Resp</label>
+                        <input type="text" class="form-control" id="resp" placeholder="Resp" name="resp">
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="iculos">ICULOS</label>
+                        <input type="text" class="form-control" id="iculos" placeholder="ICULOS" name="iculos">
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="hospadmtime">Hosp Adm Time</label>
+                        <input type="text" class="form-control" id="hospadmtime" placeholder="Hosp Adm Time" name="time">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <!--<pre>
+                </pre>-->
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                       <!--  <label for="result">Result</label>
+                        <input type="text" class="form-control" id="result" placeholder="Result">
+ -->                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+        <a class="btn btn-primary" href="{{ url_for('graphs') }}" style="margin-left:500px;margin-bottom:20px;">Analysis</a>
+        {% endblock content%}
+    </center>
+</body>
+</html>

@@ -1,0 +1,178 @@
+
+<html>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <!-- <link rel="stylesheet/less"  href="style.less"> -->
+    <!-- <link rel="stylesheet/less" type="text/css" href="style.less" > -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="{{url_for('static', filename='script.js')}}"></script>
+  </head>
+  <body>
+<h1>Analysis Graph</h1>
+<h2>We care for you</h2>
+
+<!-- <p>&nbsp;</p> -->
+
+<p> Normal Values<p>
+<div class="chartBarsWrap">
+    <div class="chartBars chartBars1">
+        <ul class="numbers">
+            <li><span>100%</span></li>
+            <li><span>80%</span></li>
+            <li><span>60%</span></li>
+            <li><span>40%</span></li>
+            <li><span>20%</span></li>
+            <li><span>0%</span></li>
+        </ul>
+        <ul class="bars">
+            <li>
+                <span class="tooltip">
+                <span class="tooltipContent">Your Heart rate is perfect..</span>
+                <div data-percentage="67" class="bar greenBar trigger"></div>
+                </span>
+                <b>Heart Rate</b>
+            </li>
+            <li>
+                <span class="tooltip">
+                <span class="tooltipContent">Let the fresh air go in</span>
+                <div data-percentage="65" class="bar blueBar trigger"></div>
+                </span>
+                <b>O2Sat</b>
+            </li>
+            <li>
+                <span class="tooltip">
+                <span class="tooltipContent">Looks like the weather is perfect</span>
+                <div data-percentage="20" class="bar orangeBar trigger"></div>
+                </span>
+                <b>Temperature</b>
+            </li>
+            <li>
+                <span class="tooltip">
+                <span class="tooltipContent">Live life to the fullest</span>
+                <div data-percentage="19" class="bar purpleBar trigger"></div>
+                </span>
+                <b>Blood Pressure</b>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- <p>Bacon ipsum do lor amet porchetta jowl jerky short loin, tri-tip flank c ow. Strip steak meat ball picanha t-bone pork loin filet mignon, pancetta jerky kielba sa sirloin ball t ip hamburger turkey pork belly ham hock. Chicken swine tail s pa re ribs,pork loin tongue picanha strip steak ribeye pancetta bresaola landjaeger flank ham shank. Picanha t-bone meatball, corned beef tail tri-tip flank capicola alcatra spare ribs. Flank tail pork loin pork belly sirloin tri-tip.</p>
+
+<h3>Responsive? Yep.</h3>
+
+<div class="chartBarsWrap">
+    <div class="chartBars chartBars2">
+        <ul class="numbers">
+            <li><span>100%</span></li>
+            <li><span>80%</span></li>
+            <li><span>60%</span></li>
+            <li><span>40%</span></li>
+            <li><span>20%</span></li>
+            <li><span>0%</span></li>
+        </ul>
+        <ul class="bars">
+            <li>
+                <div data-percentage="92" class="bar greenBar trigger"></div><b>Alpha</b></li><li>
+    <div data-percentage="33" class="bar orangeBar trigger"></div><b>Beta</b></li>
+<li>
+    <div data-percentage="64" class="bar blueBar trigger"></div><b>Gamma</b></li>
+<li>
+    <div data-percentage="44" class="bar purpleBar trigger"></div>
+    <b>Delta</b></li>
+        </ul>
+    </div>
+</div>
+
+<p>Bacon ipsum do lor amet porchetta jowl jerky short loin, tri-tip flank c ow. Strip steak meat ball picanha t-bone pork loin filet mignon, pancetta jerky kielba sa sirloin ball t ip hamburger turkey pork belly ham hock. Chicken swine tail s pa re ribs, pork loin tongue picanha strip steak ribeye pancetta bresaola landjaeger flank ham shank. Picanha t-bone meatball, corned beef tail tri-tip flank capicola alcatra spare ribs. Flank tail pork loin pork belly sirloin tri-tip. Bresaola salmi.</p>
+
+<h3>Radial Graphs</h3>
+
+<div class="box-piesite">
+    <ul>
+        <li class="design">
+            <div class="piesite" id="pie_0" data-pie="82"></div>
+        </li>
+        <li class="usability">
+            <div class="piesite" id="pie_2" data-pie="55"></div>
+        </li>
+        <li class="creativity">
+            <div class="piesite" id="pie_1" data-pie="33"></div>
+        </li>
+    </ul>
+</div>
+
+<p>Bacon ipsum do lor amet porchetta jowl jerky short loin, tri-tip flank c ow. Strip steak meat ball picanha t-bone pork loin filet mignon, pancetta jerky kielba sa sirloin ball t ip hamburger turkey pork belly ham hock. Chicken swine tail s pa re ribs,pork loin tongue picanha strip steak ribeye pancetta bresaola landjaeger flank ham shank. Picanha t-bone meatball, corned beef tail tri-tip flank capicola alcatra spare ribs. Flank tail pork loin pork belly sirloin tri-tip..</p>
+<!-- <p>&nbsp;</p>  -->
+
+<!-- <h3>Horizontal</h3>
+
+<div class="chartBarsWrap chartBarsHorizontal">
+    <div class="chartBars">
+        <ul class="bars">
+            <li>
+                <div data-percentage="92" class="bar greenBarFlat"></div><b>Alpha</b></li>
+            <li>
+                <div data-percentage="33" class="bar orangeBarFlat"></div><b>Beta</b></li>
+            <li>
+                <div data-percentage="64" class="bar blueBarFlat"></div><b>Gamma</b></li>
+            <li>
+                <div data-percentage="44" class="bar purpleBarFlat"></div><b>Delta</b></li>
+        </ul>
+    </div>
+</div>
+
+
+<p>Bacon ipsum do lor amet porchetta jowl jerky short loin, tri-tip flank c ow. Strip steak meat ball picanha t-bone pork loin filet mignon, pancetta jerky kielba sa sirloin ball t ip hamburger turkey pork belly ham hock. Chicken swine tail s pa re ribs,pork loin tongue picanha strip steak ribeye pancetta bresaola landjaeger flank ham shank.</p> -->
+<p><center>For this classification problem we have used Logistic,Random Forest,Descision Tree<center></p>
+
+<h2>Prediction by our model</h2>
+
+<div class="box-piesite">
+    <ul>
+        <li class="design">
+            Logistic Regression
+            <div class="piesite" id="pie_0" data-pie="72"></div>
+        </li>
+        <li class="usability">
+            Decision Tree
+            <div class="piesite" id="pie_2" data-pie="54"></div>
+        </li>
+        <li class="creativity">
+            Random Forest Classifier
+            <div class="piesite" id="pie_1" data-pie="67"></div>
+        </li>
+    </ul>
+</div>
+
+<h2>Missing Values in dataset</h2>
+
+<div class="chartBarsWrap">
+    <div class="chartBars chartBars3">
+        <ul class="numbers">
+            <li><span>100%</span></li>
+            <li><span>80%</span></li>
+            <li><span>60%</span></li>
+            <li><span>40%</span></li>
+            <li><span>20%</span></li>
+            <li><span>0%</span></li>
+        </ul>
+        <ul class="bars">
+            <li><div data-percentage="8" class="bar greenBar trigger"></div><b>Heart</b></li>
+            <li><div data-percentage="12" class="bar blueBar trigger"></div><b>O2Sat</b></li>
+            <li><div data-percentage="66" class="bar orangeBar trigger"></div><b>Temp</b></li>
+            <li><div data-percentage="99" class="bar purpleBar trigger"></div><b>EtCO2</b></li>
+            <li><div data-percentage="95" class="bar greenBar trigger"></div><b>Magnesium</b></li>
+            <li><div data-percentage="0" class="bar blueBar trigger"></div><b>Gender</b></li>
+            <li><div data-percentage="0" class="bar orangeBar trigger"></div><b>Age</b></li>
+            <li><div data-percentage="93" class="bar purpleBar trigger"></div><b>WBC</b></li>
+            <li><div data-percentage="95" class="bar greenBar trigger"></div><b>Calcium</b></li>
+            <li><div data-percentage="97" class="bar blueBar trigger"></div><b>Lactate</b></li>
+        </ul>
+    </div>
+</div>
+
+<p><center>The Above graph depicts the percentage of null values present in the dataset.</center></p>
+</body>
+</html>
